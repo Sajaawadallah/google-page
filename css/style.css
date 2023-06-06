@@ -5,3 +5,55 @@
     box-sizing: border-box;
     font-family: arial,sans-serif;
 }
+
+/* header start */
+
+header .continer {
+ width: 95%; 
+ margin: 10px auto;
+}
+header .continer .main-row {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+header .continer .main-row .sub-row {
+    display: flex;
+    gap : 10px;
+    align-items: center;
+
+}
+header .continer .main-row .them-icon i {
+    cursor: pointer;
+    font-size: 26px;
+
+}
+header .continer .main-row .sub-row .user-profile {
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  
+}
+
+header .continer .main-row .sub-row .user-profile:hover {
+border: 2px solid rgba(0, 0, 0 , 0.15);
+outline-offset: 2px;
+outline-style: solid;
+outline-color: rgba(0, 0, 0 , 0.15);
+
+}
+
+
+
+/* header end */
