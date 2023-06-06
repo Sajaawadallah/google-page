@@ -6,6 +6,22 @@
     font-family: arial,sans-serif;
 }
 
+:root{
+    --color1 : #5f6368;
+    --color2 : rgba(0, 0, 0 , 0.15);
+    --color3 : white;
+    --color4 : rgba(60,64,67,.08);
+    --color5 : rgba(0,0,0,.87);
+}
+ 
+body {
+    background-color: var(--color3);
+}
+
+a {
+    text-decoration: none;
+}
+
 /* header start */
 
 header .continer {
@@ -47,13 +63,55 @@ header .continer .main-row .sub-row .user-profile {
 }
 
 header .continer .main-row .sub-row .user-profile:hover {
-border: 2px solid rgba(0, 0, 0 , 0.15);
+border: 2px solid var(--color2);
 outline-offset: 2px;
 outline-style: solid;
-outline-color: rgba(0, 0, 0 , 0.15);
+outline-color: var(--color2);
 
 }
 
+header .continer .main-row .sub-row .list-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+header .continer .main-row .sub-row .list-icon:hover {
 
+    background-color: var(--color4);
+}
+header .continer .main-row .sub-row .list-icon i {
+    font-size: 18px;
+    color: var(--color1);
+    margin-top: 3px;
+
+}
+
+header .continer .main-row .sub-row .header-link {
+    color: var(--color5);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    font-size: 13px;
+}
+header .continer .main-row .sub-row .header-link:hover {
+    text-decoration: underline;
+
+}
 
 /* header end */
