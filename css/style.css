@@ -1,117 +1,202 @@
 /* add universal style */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
 }
 
-:root{
-    --color1 : #5f6368;
-    --color2 : rgba(0, 0, 0 , 0.15);
-    --color3 : white;
-    --color4 : rgba(60,64,67,.08);
-    --color5 : rgba(0,0,0,.87);
+:root {
+  --color1: #5f6368;
+  --color2: rgba(0, 0, 0, 0.15);
+  --color3: white;
+  --color4: rgba(60, 64, 67, 0.08);
+  --color5: rgba(0, 0, 0, 0.87);
+  --color6: #f2f2f2;
+  --color7: #dadce0;
+  --color8: #70757a;
 }
- 
+
 body {
-    background-color: var(--color3);
+  background-color: var(--color3);
+  min-height: 100vh;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* header start */
 
 header .continer {
- width: 95%; 
- margin: 10px auto;
+  width: 95%;
+  margin: 10px auto;
 }
 header .continer .main-row {
- display: flex;
- justify-content: space-between;
- align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header .continer .main-row .sub-row {
-    display: flex;
-    gap : 10px;
-    align-items: center;
-
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 header .continer .main-row .them-icon i {
-    cursor: pointer;
-    font-size: 26px;
-
+  cursor: pointer;
+  font-size: 26px;
 }
 header .continer .main-row .sub-row .user-profile {
-    text-align: center;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-  
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 header .continer .main-row .sub-row .user-profile:hover {
-border: 2px solid var(--color2);
-outline-offset: 2px;
-outline-style: solid;
-outline-color: var(--color2);
-
+  border: 2px solid var(--color2);
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-color: var(--color2);
 }
 
-header .continer .main-row .sub-row .list-icon{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
+header .continer .main-row .sub-row .list-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 header .continer .main-row .sub-row .list-icon:hover {
-
-    background-color: var(--color4);
+  background-color: var(--color4);
 }
 header .continer .main-row .sub-row .list-icon i {
-    font-size: 18px;
-    color: var(--color1);
-    margin-top: 3px;
-
+  font-size: 18px;
+  color: var(--color1);
+  margin-top: 3px;
 }
 
 header .continer .main-row .sub-row .header-link {
-    color: var(--color5);
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    font-size: 13px;
+  color: var(--color5);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  font-size: 13px;
 }
 header .continer .main-row .sub-row .header-link:hover {
-    text-decoration: underline;
-
+  text-decoration: underline;
 }
 
 /* header end */
+
+/* footer start */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .top-footer,
+footer .bottom-footer {
+  background-color: var(--color6);
+}
+
+footer .top-footer {
+  border-bottom: 1px solid var(--color7);
+}
+footer .continer {
+  width: 95%;
+  margin: 0 auto;
+}
+
+footer .continer .footer-row {
+  display: flex;
+  justify-content: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  color: var(--color8);
+}
+footer .continer .footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  color: var(--color8);
+}
+footer .continer .footer-bottom-subrow {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  footer .continer .footer-bottom-row {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 750px) {
+  footer .continer .footer-bottom-row {
+    justify-content: space-between;
+  }
+  footer .continer .footer-bottom-subrow {
+    gap: 15px;
+  }
+  footer .continer .footer-link,
+  p {
+    font-size: 13px !important;
+  }
+}
+@media (max-width: 500px) {
+  footer .continer .footer-bottom-subrow {
+    gap: 20px;
+  }
+  footer .continer .footer-link,
+  p {
+    font-size: 10px !important;
+  }
+  footer .continer .footer-bottom-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+footer .continer .footer-bottom-subrow .footer-link {
+  color: var(--color8);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+footer .continer .footer-bottom-subrow .footer-link:hover {
+  text-decoration: underline;
+}
+
+/* footer end */
