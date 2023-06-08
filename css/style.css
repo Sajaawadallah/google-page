@@ -262,7 +262,6 @@ main .main-continer .main-col .search-form .btn-row button {
 }
 main .main-continer .main-col .search-form .btn-row button:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: var(--color10);
   border: 1px solid var(--color7);
   color: var(--color12);
 }
