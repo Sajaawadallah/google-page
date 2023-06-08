@@ -15,6 +15,7 @@
   --color6: #f2f2f2;
   --color7: #dadce0;
   --color8: #70757a;
+  --color9: #9aa0a6;
 }
 
 body {
@@ -112,6 +113,109 @@ header .continer .main-row .sub-row .header-link:hover {
 }
 
 /* header end */
+
+/* main form start */
+
+main .main-continer {
+  width: 70%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+main .main-continer .main-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 775px) {
+  main .main-continer .main-col .google-logo {
+    width: 50%;
+  }
+  main .main-continer .main-col .google-logo img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+main .main-continer .main-col .search-form .search-input {
+  position: relative;
+  width: 584px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 750px) {
+  main .main-continer .main-col .search-form .search-input {
+    width: 484px;
+  }
+}
+@media (max-width: 600px) {
+  main .main-continer .main-col .search-form .search-input {
+    width: 384px;
+  }
+}
+@media (max-width: 480px) {
+  main .main-continer .main-col .search-form .search-input {
+    width: 300px;
+  }
+}
+
+main .main-continer .main-col .search-form .search-input input[type="text"] {
+  width: 100%;
+  padding-left: 35px !important;
+  padding: 5px 8px 0 14px;
+  display: flex;
+  min-height: 44px;
+  height: auto;
+  background: #fff;
+  border: 1px solid #dfe1e5 !important;
+  box-shadow: none;
+  border-radius: 24px;
+  margin: 0 auto;
+  font-size: 16px;
+  outline: none !important;
+}
+
+main
+  .main-continer
+  .main-col
+  .search-form
+  .search-input
+  input[type="text"]:hover,
+main
+  .main-continer
+  .main-col
+  .search-form
+  .search-input
+  input[type="text"]:active,
+main
+  .main-continer
+  .main-col
+  .search-form
+  .search-input
+  input[type="text"]:focus,
+main
+  .main-continer
+  .main-col
+  .search-form
+  .search-input
+  input[type="text"]:focus-visible {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0) !important;
+}
+
+main .main-continer .main-col .search-form .search-input .bi-search {
+  position: absolute;
+  top: 15px;
+  left: 3%;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--color9);
+}
+
+/* main form end */
 
 /* footer start */
 

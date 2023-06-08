@@ -36,6 +36,28 @@
     </header>
     <!-- header end -->
 
+    <!-- main form start  -->
+    <main>
+        <div class="main-continer">
+            <div class="main-col">
+                <div class="google-logo">
+                    <img src="googlelogo_color_272x92dp.png" height="92" alt="">
+                </div>
+                <form action="https://www.google.com/search " target="_blank" method="get" class="search-form"
+                    onsubmit="search()">
+                    <div class="search-input">
+                        <input value="" id="searchinput" type="text">
+                        <i class=" bi bi-search"></i>
+                    </div>
+                    <button type="submit">sum</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- main form end  -->
+
     <!-- footer start -->
     <footer>
         <div class="top-footer">
@@ -65,6 +87,14 @@
         </div>
     </footer>
     <!-- footer end -->
+
+    <!-- link the form with google search  -->
+    <script>
+        function search() {
+            var value = document.getElementById("searchinput").value;
+            location.replace("https://www.google.com/search?q=" + value + "");
+        }
+    </script>
 </body>
 
 </html>
