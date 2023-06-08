@@ -16,11 +16,15 @@
   --color7: #dadce0;
   --color8: #70757a;
   --color9: #9aa0a6;
+  --color10: #f8f9fa;
+  --color11: #3c4043;
+  --color12: #202124;
+  --color13: #4d5156;
+  --color14: #1a0dab;
 }
 
 body {
   background-color: var(--color3);
-  min-height: 100vh;
 }
 
 a {
@@ -159,6 +163,9 @@ main .main-continer .main-col .search-form .search-input {
   main .main-continer .main-col .search-form .search-input {
     width: 300px;
   }
+  main .main-continer .main-col .search-form .search-input .mic-icon {
+    right: 12% !important;
+  }
 }
 
 main .main-continer .main-col .search-form .search-input input[type="text"] {
@@ -213,6 +220,74 @@ main .main-continer .main-col .search-form .search-input .bi-search {
   font-size: 14px;
   cursor: pointer;
   color: var(--color9);
+}
+main .main-continer .main-col .search-form .search-input .lins-icon {
+  position: absolute;
+  top: 10px;
+  right: 3%;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+main .main-continer .main-col .search-form .search-input .mic-icon {
+  position: absolute;
+  top: 10px;
+  right: 9%;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+main .main-continer .main-col .search-form .btn-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+main .main-continer .main-col .search-form .btn-row button {
+  background-color: var(--color10);
+  border: 1px solid var(--color10);
+  border-radius: 4px;
+  color: var(--color11);
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+main .main-continer .main-col .search-form .btn-row button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: var(--color10);
+  border: 1px solid var(--color7);
+  color: var(--color12);
+}
+main .main-continer .main-col .search-form .ar-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color13);
+  line-height: 28px;
+  margin-top: 20px;
+  font-size: small;
+  margin-bottom: 24px;
+}
+main .main-continer .main-col .search-form .ar-link a {
+  color: var(--color14);
+  padding: 0 3px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+main .main-continer .main-col .search-form .ar-link a:hover {
+  text-decoration: underline;
 }
 
 /* main form end */
