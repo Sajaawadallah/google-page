@@ -7,20 +7,20 @@
 }
 
 :root {
-  --color1: #5f6368;
-  --color2: rgba(0, 0, 0, 0.15);
-  --color3: white;
-  --color4: rgba(60, 64, 67, 0.08);
-  --color5: rgba(0, 0, 0, 0.87);
-  --color6: #f2f2f2;
-  --color7: #dadce0;
-  --color8: #70757a;
+  --color1: rgba(255, 255, 255, 0.87);
+  --color2: rgba(232, 234, 237, 0.08);
+  --color3: #202124;
+  --color4: rgba(232, 234, 237, 0.08);
+  --color5: white;
+  --color6: #171717;
+  --color7: #3c4043;
+  --color8: #999da2;
   --color9: #9aa0a6;
-  --color10: #f8f9fa;
-  --color11: #3c4043;
+  --color10: #303134;
+  --color11: #e8eaed;
   --color12: #202124;
-  --color13: #4d5156;
-  --color14: #1a0dab;
+  --color13: #bdc1c6;
+  --color14: #8ab4f8;
 }
 
 body {
@@ -39,7 +39,7 @@ header .continer {
 }
 header .continer .main-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
 }
 header .continer .main-row .sub-row {
@@ -175,7 +175,7 @@ main .main-continer .main-col .search-form .search-input input[type="text"] {
   display: flex;
   min-height: 44px;
   height: auto;
-  background: #fff;
+  background: transparent;
   border: 1px solid #dfe1e5 !important;
   box-shadow: none;
   border-radius: 24px;
@@ -263,7 +263,6 @@ main .main-continer .main-col .search-form .btn-row button {
 main .main-continer .main-col .search-form .btn-row button:hover {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   border: 1px solid var(--color7);
-  color: var(--color12);
 }
 main .main-continer .main-col .search-form .ar-link {
   display: flex;
